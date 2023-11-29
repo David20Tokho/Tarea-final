@@ -1,0 +1,200 @@
+/* Definición de fuentes de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+
+/* Estilos generales */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #000; /* Cambio de fondo a negro */
+    color: #fff; /* Cambio de color de fuente a blanco */
+    margin: 0;
+    position: relative; /* Agregado para el pie de página */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Encabezado */
+header {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Navegación */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+/* Sección de Biografía */
+#biografia {
+    background-color: #000; /* Cambio de fondo a negro */
+    color: #fff; /* Cambio de color de fuente a blanco */
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center; /* Centrar el contenido */
+}
+
+/* Sección de Música */
+#musica {
+    background-color: #000; /* Cambio de fondo a negro */
+    color: #fff; /* Cambio de color de fuente a blanco */
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center; /* Centrar el contenido */
+}
+
+/* Imágenes de los álbumes */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Centrar la imagen horizontalmente */
+    margin: 0 auto;
+}
+
+/* Sección de Legado */
+#legado {
+    background-color: #000; /* Cambio de fondo a negro */
+    color: #fff; /* Cambio de color de fuente a blanco */
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center; /* Centrar el contenido */
+}
+
+/* Video de Avicii */
+#video {
+    background-color: #000; /* Cambio de fondo a negro */
+    color: #fff; /* Cambio de color de fuente a blanco */
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center; /* Centrar el contenido */
+}
+
+iframe {
+    width: 100%;
+}
+
+/* Formulario */
+#formulario {
+    background-color: #000; /* Cambio de fondo a negro */
+    color: #fff; /* Cambio de color de fuente a blanco */
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center; /* Centrar el contenido */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #000; /* Cambio de fondo a negro */
+    color: #fff; /* Cambio de color de fuente a blanco */
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0; /* Agregado para evitar superposición */
+    /* Regla media query para dispositivos con un ancho máximo de 480px */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px; /* Modificación de tamaño de fuente */
+        background-color: #222; /* Cambio de color de fondo */
+        padding: 10px; /* Ajuste de espaciado */
+    }
+
+    /* Modificación específica para la navegación en pantallas más pequeñas */
+    nav ul {
+        flex-direction: column; /* Cambio de dirección de flexbox */
+        text-align: center; /* Centrar el texto */
+    }
+
+    /* Modificación en las imágenes para pantallas más pequeñas */
+    img {
+        max-width: 80%; /* Reducción del ancho máximo */
+    }
+}
+
+/* Regla media query para dispositivos con un ancho máximo de 768px */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 20px 0; /* Ajuste del espaciado en el encabezado */
+        font-size: 22px; /* Modificación de tamaño de fuente */
+    }
+
+    /* Modificación en la sección de Biografía para pantallas medianas */
+    #biografia {
+        padding: 30px; /* Aumento del espaciado */
+        border-radius: 8px; /* Mayor redondez en los bordes */
+    }
+
+    /* Modificación en el formulario para pantallas medianas */
+    #formulario {
+        padding: 30px; /* Aumento del espaciado */
+        border-radius: 8px; /* Mayor redondez en los bordes */
+    }
+}
+
+/* Regla media query para dispositivos con un ancho máximo de 1024px */
+@media screen and (max-width: 1024px) {
+    /* Cambio en la estructura de columnas para la sección de Legado */
+    #legado {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en lugar de una */
+        text-align: left; /* Ajuste del alineamiento del texto */
+    }
+
+    /* Modificación en el tamaño de fuente para las secciones */
+    h1 {
+        font-size: 28px; /* Ajuste del tamaño de fuente principal */
+    }
+
+    /* Modificación en el tamaño de fuente para el pie de página */
+    footer {
+        font-size: 12px; /* Reducción del tamaño de fuente */
+    }
+}
+
+}
