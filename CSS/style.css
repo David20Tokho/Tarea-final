@@ -4,10 +4,10 @@
 /* Estilos generales */
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #000; /* Cambio de fondo a negro */
-    color: #fff; /* Cambio de color de fuente a blanco */
+    background-color: #000;
+    color: #fff;
     margin: 0;
-    position: relative; /* Agregado para el pie de página */
+    position: relative;
 }
 
 .container {
@@ -18,7 +18,7 @@ body {
 
 /* Encabezado */
 header {
-    background-color: #000000;
+    background-color: #000;
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -40,65 +40,33 @@ nav li {
     margin: 0 10px;
 }
 
-/* Sección de Biografía */
-#biografia {
-    background-color: #000; /* Cambio de fondo a negro */
-    color: #fff; /* Cambio de color de fuente a blanco */
+/* Sección de Biografía, Música, Legado, Video, Formulario */
+#biografia,
+#musica,
+#legado,
+#video,
+#formulario {
+    background-color: #000;
+    color: #fff;
     padding: 20px;
     border-radius: 5px;
-    text-align: center; /* Centrar el contenido */
-}
-
-/* Sección de Música */
-#musica {
-    background-color: #000; /* Cambio de fondo a negro */
-    color: #fff; /* Cambio de color de fuente a blanco */
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center; /* Centrar el contenido */
+    text-align: center;
 }
 
 /* Imágenes de los álbumes */
 img {
     max-width: 100%;
     height: auto;
-    display: block; /* Centrar la imagen horizontalmente */
+    display: block;
     margin: 0 auto;
 }
 
-/* Sección de Legado */
-#legado {
-    background-color: #000; /* Cambio de fondo a negro */
-    color: #fff; /* Cambio de color de fuente a blanco */
-    padding: 20px;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    text-align: center; /* Centrar el contenido */
-}
-
 /* Video de Avicii */
-#video {
-    background-color: #000; /* Cambio de fondo a negro */
-    color: #fff; /* Cambio de color de fuente a blanco */
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center; /* Centrar el contenido */
-}
-
 iframe {
     width: 100%;
 }
 
 /* Formulario */
-#formulario {
-    background-color: #000; /* Cambio de fondo a negro */
-    color: #fff; /* Cambio de color de fuente a blanco */
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center; /* Centrar el contenido */
-}
-
 form {
     display: flex;
     flex-direction: column;
@@ -129,72 +97,59 @@ input[type="submit"] {
 
 /* Pie de página */
 footer {
-    background-color: #000; /* Cambio de fondo a negro */
-    color: #fff; /* Cambio de color de fuente a blanco */
+    background-color: #000;
+    color: #fff;
     text-align: center;
     padding: 10px 0;
     position: absolute;
     bottom: 0;
     width: 100%;
-    left: 0; /* Agregado para evitar superposición */
-    /* Regla media query para dispositivos con un ancho máximo de 480px */
+    left: 0;
+}
+
+/* Media queries */
 @media screen and (max-width: 480px) {
     body {
-        font-size: 14px; /* Modificación de tamaño de fuente */
-        background-color: #222; /* Cambio de color de fondo */
-        padding: 10px; /* Ajuste de espaciado */
+        font-size: 14px;
+        background-color: #222;
+        padding: 10px;
     }
 
-    /* Modificación específica para la navegación en pantallas más pequeñas */
     nav ul {
-        flex-direction: column; /* Cambio de dirección de flexbox */
-        text-align: center; /* Centrar el texto */
+        flex-direction: column;
+        text-align: center;
     }
 
-    /* Modificación en las imágenes para pantallas más pequeñas */
     img {
-        max-width: 80%; /* Reducción del ancho máximo */
+        max-width: 80%;
     }
 }
 
-/* Regla media query para dispositivos con un ancho máximo de 768px */
 @media screen and (max-width: 768px) {
     header {
-        padding: 20px 0; /* Ajuste del espaciado en el encabezado */
-        font-size: 22px; /* Modificación de tamaño de fuente */
+        padding: 20px 0;
+        font-size: 22px;
     }
 
-    /* Modificación en la sección de Biografía para pantallas medianas */
-    #biografia {
-        padding: 30px; /* Aumento del espaciado */
-        border-radius: 8px; /* Mayor redondez en los bordes */
-    }
-
-    /* Modificación en el formulario para pantallas medianas */
+    #biografia,
     #formulario {
-        padding: 30px; /* Aumento del espaciado */
-        border-radius: 8px; /* Mayor redondez en los bordes */
+        padding: 30px;
+        border-radius: 8px;
     }
 }
 
-/* Regla media query para dispositivos con un ancho máximo de 1024px */
 @media screen and (max-width: 1024px) {
-    /* Cambio en la estructura de columnas para la sección de Legado */
     #legado {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Dos columnas en lugar de una */
-        text-align: left; /* Ajuste del alineamiento del texto */
+        grid-template-columns: repeat(2, 1fr);
+        text-align: left;
     }
 
-    /* Modificación en el tamaño de fuente para las secciones */
     h1 {
-        font-size: 28px; /* Ajuste del tamaño de fuente principal */
+        font-size: 28px;
     }
 
-    /* Modificación en el tamaño de fuente para el pie de página */
     footer {
-        font-size: 12px; /* Reducción del tamaño de fuente */
+        font-size: 12px;
     }
-}
-
 }
